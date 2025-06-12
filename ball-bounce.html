@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ball Bounce Game | Game Hub</title>
+    <link rel="stylesheet" href="ball-bounce.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Ball Bounce Game</h1>
+        <p>Use the ⬅️ ➡️ arrow keys to move the paddle and break all the bricks!</p>
+    </header>
+
+    <!-- Game Area -->
+    <main class="game-container">
+        <canvas id="ballCanvas" width="480" height="320" aria-label="Ball Bounce Game Canvas"></canvas>
+        <div class="status">
+            <p>Score: <span id="score">0</span></p>
+            <div class="button-group">
+                <button class="restart-btn" onclick="restartGame()">Restart</button>
+                <a href="index.html"><button class="back-btn">Back to Homepage</button></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Game Over Overlay -->
+    <div id="catch-overlay" class="overlay hidden" role="dialog" aria-labelledby="game-over-title">
+        <div class="overlay-content">
+            <h2 id="game-over-title">💥 Game Over 💥</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <div class="button-group">
+                <button class="restart-btn" onclick="restartGame()">Restart</button>
+                <a href="index.html" class="back-btn">Back to Homepage</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Game Hub | <a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <!-- Script -->
+    <script src="ball-bounce.js"></script>
+</body>
+
+</html>

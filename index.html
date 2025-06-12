@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <img src="images/logo.jpg" alt="Game Hub Logo" class="logo">
+            <h1>Welcome to Game Hub</h1>
+            <p>Play. Compete. Enjoy.</p>
+        </div>
+    </header>
+
+    <!-- Game Cards Section -->
+    <main class="game-section">
+        <h2 class="section-title">Choose a Game</h2>
+        <div class="card-container">
+
+            <div class="game-card" onclick="goToGame('tic-tac-toe.html')">
+                <img src="images/tictac.jpg" alt="Tic Tac Toe">
+                <h3>Tic Tac Toe</h3>
+            </div>
+
+            <div class="game-card" onclick="goToGame('rock-paper-scissors.html')">
+                <img src="images/rockpaper.jpg" alt="Rock Paper Scissors">
+                <h3>Rock Paper Scissors</h3>
+            </div>
+
+            <div class="game-card" onclick="goToGame('memory-game.html')">
+                <img src="images/memorymatch.jpg" alt="Memory Game">
+                <h3>Memory Match</h3>
+            </div>
+
+            <div class="game-card" onclick="goToGame('snake-game.html')">
+                <img src="images/snake.jpg" alt="Snake Game">
+                <h3>Snake Game</h3>
+            </div>
+
+            <div class="game-card" onclick="goToGame('ball-bounce.html')">
+                <img src="images/ball-bounce.jpg" alt="ball bounce Game">
+                <h3>Ball Bounce Game</h3>
+            </div>
+
+            <div class="game-card" onclick="goToGame('catch-the-ball.html')">
+                <img src="images/catch-the-ball.jpg" alt="catch-the-ball Game">
+                <h3>Catch the Ball Game</h3>
+            </div>
+
+            <!-- Add more game cards as needed -->
+            <div class="game-card coming-soon">
+                <img src="images/othergames.jpg" alt="More Games">
+                <h3>More Games Coming Soon...</h3>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Game Hub | Built with ❤️ using HTML, CSS & JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game | Game Hub</title>
+    <link rel="stylesheet" href="memory-game.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Memory Match Game</h1>
+        <p>Flip the cards and match all the pairs!</p>
+    </header>
+
+    <!-- Game Container -->
+    <main class="game-area">
+        <section class="game-board" id="gameBoard">
+            <!-- Cards will be dynamically generated here -->
+        </section>
+
+        <div class="status">
+            <p>Moves: <span id="moveCounter">0</span></p>
+            <div class="button-group">
+                <button class="restart-btn" onclick="restartGame()">Restart</button>
+                <a href="index.html"><button class="back-btn">Back to Homepage</button></a>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Game Hub | <a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <script src="memory-game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors | Game Hub</title>
+    <link rel="stylesheet" href="rock-paper-scissors.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Rock Paper Scissors</h1>
+        <p>Choose your move and challenge the computer!</p>
+    </header>
+
+    <!-- Game Section -->
+    <main class="game-area">
+
+        <div class="game-info">
+            <div class="info-box">
+                <p><strong>Round:</strong> <span id="round">1</span> / <span id="totalRounds">5</span></p>
+                <p><strong>Your Score:</strong> <span id="userScore">0</span></p>
+                <p><strong>Computer Score:</strong> <span id="computerScore">0</span></p>
+            </div>
+        </div>
+
+        <div class="choices">
+            <button onclick="play('rock')">✊ Rock</button>
+            <button onclick="play('paper')">✋ Paper</button>
+            <button onclick="play('scissors')">✌️ Scissors</button>
+        </div>
+
+        <div class="results">
+            <h2 id="resultText">Make your move!</h2>
+            <p id="userChoice">You: -</p>
+            <p id="computerChoice">Computer: -</p>
+
+        </div>
+
+        <div class="button-group">
+            <button class="restart-btn" onclick="restartGame()">Restart</button>
+            <a href="index.html"><button class="back-btn">Back to Homepage</button></a>
+        </div>
+    </main>
+
+
+
+    <!-- Game Over Overlay -->
+    <div id="game-over-overlay" class="overlay hidden" role="dialog">
+        <div class="overlay-content">
+            <h2 id="final-result">Game Over</h2>
+            <p id="final-score">You: 0 | Computer: 0</p>
+            <div class="button-group">
+                <button class="restart-btn" onclick="restartGame()">Play Again</button>
+                <a href="index.html" class="back-btn">Back to Homepage</a>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Game Hub | <a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <script src="rock-paper-scissors.js"></script>
+</body>
+
+</html>

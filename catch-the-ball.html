@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catch the Ball | Game Hub</title>
+    <link rel="stylesheet" href="catch-the-ball.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Catch the Ball</h1>
+        <p>Move the basket with ⬅️ ➡️ arrow keys to move and catch as many falling balls as you can!</p>
+    </header>
+
+    <!-- Game Area -->
+    <main class="game-container">
+        <canvas id="catchCanvas" width="480" height="320"></canvas>
+        <div class="status">
+            <p>Score: <span id="catch-score">0</span></p>
+            <button onclick="restartCatchGame()">Restart</button>
+        </div>
+    </main>
+    <!-- Game Over Overlay -->
+    <div id="catch-overlay" class="overlay hidden">
+        <div class="overlay-content">
+            <h2>💥 Game Over 💥</h2>
+            <p>Your Score: <span id="final-score">0</span></p>
+
+            <button class="restart-btn" onclick="restartGame()">Restart</button>
+            <a href="index.html"><button class="back-btn">Back to Homepage</button></a>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Game Hub | <a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <script src="catch-the-ball.js"></script>
+</body>
+
+</html>
