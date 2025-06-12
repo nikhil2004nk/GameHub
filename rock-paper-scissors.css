@@ -94,6 +94,7 @@ body {
     background-color: #16404D;
     color: white;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 
 .restart-btn:hover,
